@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #fcfcfc;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarysystem.addBookController">
+   <children>
+      <VBox prefHeight="701.0" prefWidth="89.0" style="-fx-background-color: #61a46a #61a46a;">
+         <children>
+            <Button fx:id="home_btn" mnemonicParsing="false" onAction="#switchToLibrarianHomeScreen" prefHeight="100.0" prefWidth="88.0" style="-fx-background-color: #61a46a;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="11.0" />
+               </font></Button>
+            <Button fx:id="books_list" mnemonicParsing="false" onAction="#switchToBLScreen" prefHeight="100.0" prefWidth="88.0" style="-fx-background-color: #61a46a;" text="Books List" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="11.0" />
+               </font></Button>
+            <Button fx:id="reserve_btn" mnemonicParsing="false" onAction="#switchToMLScreen" prefHeight="100.0" prefWidth="88.0" style="-fx-background-color: #61a46a;" text="Members list" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="11.0" />
+               </font></Button>
+            <Button fx:id="Profile_btn" mnemonicParsing="false" onAction="#switchToReportsScreen" prefHeight="100.0" prefWidth="88.0" style="-fx-background-color: #61a46a;" text="Reports" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="11.0" />
+               </font></Button>
+            <Button fx:id="logOut" mnemonicParsing="false" onAction="#logOut" prefHeight="100.0" prefWidth="88.0" style="-fx-background-color: #61a46a;" text="Log out" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="11.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <Label layoutX="143.0" layoutY="39.0" text="Add Book">
+         <font>
+            <Font name="Comic Sans MS Bold" size="36.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="440.0" layoutX="139.0" layoutY="102.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 40; -fx-arc-width: 40;" width="803.0" />
+      <Label layoutX="158.0" layoutY="123.0" text="Title">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="addBook" layoutX="742.0" layoutY="491.0" mnemonicParsing="false" onAction="#addBook" prefHeight="26.0" prefWidth="165.0" style="-fx-background-color: #61a46a #61a46a; -fx-background-radius: 15;" text="Add book" textFill="WHITE">
+         <font>
+            <Font name="DIN Condensed Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="title" layoutX="155.0" layoutY="152.0" prefHeight="26.0" prefWidth="310.0" />
+      <Label layoutX="541.0" layoutY="123.0" text="ISBN">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ISBN" layoutX="538.0" layoutY="152.0" prefHeight="26.0" prefWidth="310.0" />
+      <Label layoutX="158.0" layoutY="192.0" text="Volume">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="volume" layoutX="155.0" layoutY="221.0" prefHeight="26.0" prefWidth="310.0" />
+      <Label layoutX="541.0" layoutY="192.0" text="Release Date">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rDate" layoutX="538.0" layoutY="221.0" prefHeight="26.0" prefWidth="310.0" promptText="YYYY-MM-DD" />
+      <Label layoutX="158.0" layoutY="263.0" text="Publisher name">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="541.0" layoutY="263.0" text="Categories">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="330.0" text="Language">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="language" layoutX="155.0" layoutY="359.0" prefHeight="26.0" prefWidth="310.0" />
+      <TextField fx:id="pName" layoutX="155.0" layoutY="292.0" prefHeight="26.0" prefWidth="310.0" />
+      <TextField fx:id="categories" layoutX="538.0" layoutY="292.0" prefHeight="26.0" prefWidth="310.0" promptText="Ca" />
+      <Label layoutX="541.0" layoutY="330.0" text="Barcode">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="barcode" layoutX="538.0" layoutY="359.0" prefHeight="26.0" prefWidth="310.0" />
+      <Label layoutX="158.0" layoutY="400.0" text="Authors">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="authors" layoutX="155.0" layoutY="429.0" prefHeight="26.0" prefWidth="310.0" promptText="Hadie Omar, Ayman Abdo, ..." />
+      <Label layoutX="541.0" layoutY="400.0" text="Rack number">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rackNum" layoutX="538.0" layoutY="429.0" prefHeight="26.0" prefWidth="310.0" />
+   </children>
+</AnchorPane>
