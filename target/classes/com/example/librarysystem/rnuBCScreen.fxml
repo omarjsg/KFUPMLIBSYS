@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #fcfcfc;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarysystem.ApplicationController">
+   <children>
+      <VBox prefHeight="701.0" prefWidth="89.0" style="-fx-background-color: #61a46a #61a46a;">
+         <children>
+            <Button fx:id="home_btn" mnemonicParsing="false" onAction="#switchToMemberHomeScreen" prefHeight="100.0" prefWidth="88.0" style="-fx-background-color: #61a46a;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="11.0" />
+               </font></Button>
+            <Button fx:id="books_list" mnemonicParsing="false" onAction="#switchToBookListScreen" prefHeight="100.0" prefWidth="88.0" style="-fx-background-color: #61a46a;" text="Books List" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="11.0" />
+               </font></Button>
+            <Button fx:id="reserve_btn" mnemonicParsing="false" onAction="#switchToReserveScreen" prefHeight="100.0" prefWidth="88.0" style="-fx-background-color: #61a46a;" text="Reserve" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="11.0" />
+               </font></Button>
+            <Button fx:id="Profile_btn" mnemonicParsing="false" onAction="#logOut" prefHeight="100.0" prefWidth="88.0" style="-fx-background-color: #61a46a;" text="Log out" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="11.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <Label layoutX="143.0" layoutY="39.0" prefHeight="51.0" prefWidth="347.0" text="Renew Book Borrow">
+         <font>
+            <Font name="Comic Sans MS Bold" size="36.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="527.0" layoutX="139.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 40; -fx-arc-width: 40;" width="803.0" />
+      <Button fx:id="ok" layoutX="751.0" layoutY="589.0" mnemonicParsing="false" onAction="#switchToMemberHomeScreen" prefHeight="26.0" prefWidth="165.0" style="-fx-background-color: #61a46a #61a46a; -fx-background-radius: 15;" text="OK" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Button>
+      <Circle fill="WHITE" layoutX="513.0" layoutY="334.0" radius="100.0" stroke="#61a46a" strokeType="INSIDE" strokeWidth="10.0" />
+      <Line endX="-6.28131103515625" endY="41.537078857421875" layoutX="500.0" layoutY="343.0" startX="-48.338409423828125" startY="-5.95965576171875" stroke="#61a46a" strokeWidth="10.0" />
+      <Line endX="-15.68389892578125" endY="31.70562744140625" layoutX="510.0" layoutY="353.0" startX="66.22796630859375" startY="-45.849517822265625" stroke="#61a46a" strokeWidth="10.0" />
+      <Label layoutX="154.0" layoutY="480.0" text="The selected reservation has been renewed">
+         <font>
+            <Font name="Comic Sans MS Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

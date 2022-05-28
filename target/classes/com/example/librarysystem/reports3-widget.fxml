@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="82.0" prefWidth="750.0" style="-fx-background-radius: 20; -fx-background-color: #fcfcfd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarysystem.Reports3WidgetController">
+   <children>
+      <Label layoutX="18.0" layoutY="30.0" text="Member ID">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="ID" layoutX="100.0" layoutY="31.0" prefHeight="18.0" prefWidth="80.0" text="ID" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="30.0" text="Member name">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="296.0" layoutY="31.0" prefHeight="18.0" prefWidth="200.0" text="name" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

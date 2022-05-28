@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="82.0" prefWidth="750.0" style="-fx-background-radius: 20; -fx-background-color: #fcfcfd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarysystem.RequestWidgetController">
+   <children>
+      <Label layoutX="16.0" layoutY="11.0" prefHeight="23.0" prefWidth="72.0" text="Book Title">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="title" layoutX="99.0" layoutY="14.0" prefHeight="18.0" prefWidth="629.0" text="Title" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="44.0" text="Member ID">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="ID" layoutX="99.0" layoutY="44.0" prefHeight="18.0" prefWidth="172.0" text="ID" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="44.0" text="Request date">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="requestDate" layoutX="423.0" layoutY="45.0" prefHeight="19.0" prefWidth="125.0" text="YYYY-MM-DD" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

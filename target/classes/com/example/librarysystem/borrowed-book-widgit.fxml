@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="150.0" prefWidth="750.0" style="-fx-background-radius: 20; -fx-background-color: #fcfcfd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarysystem.MemberHomeWidgetController">
+   <children>
+      <Button fx:id="returnButton" layoutX="630.0" layoutY="110.0" mnemonicParsing="false" onAction="#returnBook" prefHeight="27.0" prefWidth="108.0" style="-fx-background-color: #61a46a #61a46a; -fx-background-radius: 15;" text="Return" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="renewButton" layoutX="515.0" layoutY="110.0" mnemonicParsing="false" onAction="#renewBook" prefHeight="27.0" prefWidth="108.0" style="-fx-background-color: #61a46a #61a46a; -fx-background-radius: 15;" text="Renew" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="16.0" layoutY="13.0" text="Title">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="title" layoutX="73.0" layoutY="14.0" prefHeight="18.0" prefWidth="395.0" text="Title" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="338.0" layoutY="74.0" text="Volume">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="volume" layoutX="418.0" layoutY="74.0" prefHeight="19.0" prefWidth="78.0" text="Volume" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="44.0" text="Authors">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="authors" layoutX="74.0" layoutY="44.0" prefHeight="18.0" prefWidth="392.0" text="Authors" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="73.0" text="Publisher">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="publisher" layoutX="74.0" layoutY="74.0" prefHeight="18.0" prefWidth="253.0" text="Publisher" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="517.0" layoutY="10.0" text="ISBN">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="ISBN" layoutX="607.0" layoutY="14.0" prefHeight="19.0" prefWidth="132.0" text="ISBN" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="105.0" text="Language">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="language" layoutX="74.0" layoutY="106.0" prefHeight="18.0" prefWidth="93.0" text="Lnguage" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="517.0" layoutY="71.0" text="Rack number">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="rackNumber" layoutX="607.0" layoutY="74.0" prefHeight="19.0" prefWidth="132.0" text="Rack number" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="106.0" text="Borrow date">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="borrowDate" layoutX="242.0" layoutY="108.0" prefHeight="19.0" prefWidth="95.0" text="DD-MM-YYYYY" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="106.0" text="Return date">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="ReturnDate" layoutX="419.0" layoutY="108.0" prefHeight="19.0" prefWidth="80.0" text="DD-MM-YYYYY" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="517.0" layoutY="41.0" text="Release date">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="releaseDate" layoutX="607.0" layoutY="44.0" prefHeight="19.0" prefWidth="132.0" text="DD-MM-YYYY" textFill="#b5b5b5">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
